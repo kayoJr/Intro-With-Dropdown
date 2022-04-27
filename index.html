@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <header>
+    <div class="container">
+      <nav>
+        <div class="left-nav">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          <div class="links">
+            <ul class="main-links">
+              <li class="dropdown">
+                <a href="#">Features <img src="./images/icon-arrow-down.svg" alt=""></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><img src="./images/icon-todo.svg" alt=""><a href="#">Todo List</a>
+                  </li>
+                  <li class="dropdown"><img src="./images/icon-calendar.svg" alt=""><a href="#">Calendar</a>
+                  </li>
+                  <li class="dropdown"><img src="./images/icon-reminders.svg" alt=""><a href="#">Reminders</a>
+                  </li>
+                  <li class="dropdown"><img src="./images/icon-planning.svg" alt=""><a href="#">Planning</a>
+                  </li>
+            </ul>
+              </li>
+                <li class="dropdown">
+                  <a href="#">Company <img src="./images/icon-arrow-down.svg" alt=""></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown"><a href="#">History</a>
+                    </li>
+                    <li class="dropdown"><a href="#">Our Team</a>
+                    </li>
+                    <li class="dropdown"><a href="#">Blog</a>
+                    </li>
+              </ul>
+      </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="account">
+          <a class="btn login" href="#">Login</a>
+          <a class="btn register" href="#">Register</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="hero">
+      <div class="detail">
+        <h1>Make <br> Remote Work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+        <div class="icons">
+          <ul>
+            <li><img src="./images/client-databiz.svg" alt=""></li>
+            <li><img src="./images/client-audiophile.svg" alt=""></li>
+            <li><img src="./images/client-meet.svg" alt=""></li>
+            <li><img src="./images/client-maker.svg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./images/image-hero-desktop.png" alt="">
+      </div>
+    </div>
+  </div>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.upwork.com/freelancers/~01cc17436602032221">Kaleb Melaku</a>.
   </div>
 </body>
+
 </html>

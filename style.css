@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+* p {
+  font-size: 18px;
+}
+
+* ul,
+* a {
+  list-style: none;
+  text-decoration: none;
+  color: dimgray;
+}
+
+/*General styles*/
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+header nav {
+  margin: 2rem 2rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .left-nav .links {
+  margin-left: 3rem;
+  position: relative;
+}
+
+header nav .left-nav .links .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem 1rem 1rem 0;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: left;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header nav .left-nav .links .dropdown-menu .dropdown {
+  margin: 15px 20px;
+}
+
+header nav .left-nav .links .dropdown-menu .dropdown img {
+  margin-right: 15px;
+}
+
+header nav .left-nav .links .dropdown-menu li {
+  padding: 0;
+}
+
+header nav .left-nav .links .dropdown-menu:hover {
+  display: block;
+}
+
+header nav .left-nav .links .main-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+header nav .left-nav .links .main-links li {
+  margin-left: 3.5rem;
+}
+
+header nav .left-nav .links .main-links li a {
+  padding: 2rem 0;
+}
+
+header nav .left-nav .links .main-links li a:hover + .dropdown-menu {
+  display: block;
+}
+
+header nav a:hover {
+  color: black;
+}
+
+header nav .account {
+  padding-bottom: 0.5rem;
+}
+
+header nav .account a {
+  margin-left: 1rem;
+}
+
+header nav .account .login {
+  border: none;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 6rem 8rem 0 8rem;
+}
+
+.hero .detail {
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+
+.hero .detail h1 {
+  font-size: 5rem;
+}
+
+.hero .detail p {
+  color: dimgray;
+  padding: 2rem 3rem 0 0;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.hero .detail a {
+  background-color: #141414;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hero .detail a:hover {
+  background-color: #fff;
+  color: #141414;
+}
+
+.hero .detail .icons {
+  margin-top: 5rem;
+}
+
+.hero .detail .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .detail .icons ul li {
+  margin-right: 3rem;
+}
+
+.hero .image {
+  position: relative;
+}
+
+.hero .image img {
+  width: 80%;
+  right: 0;
+  top: 0;
+}
+
+.attribution {
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
