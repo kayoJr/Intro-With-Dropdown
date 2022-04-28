@@ -33,6 +33,10 @@ body {
   background-color: #fafafa;
 }
 
+.mob-nav {
+  display: none;
+}
+
 header nav {
   margin: 2rem 2rem 0 2rem;
   display: -webkit-box;
@@ -71,8 +75,8 @@ header nav .left-nav .links .dropdown-menu {
   border-radius: 10px;
   margin-top: 1rem;
   text-align: left;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 header nav .left-nav .links .dropdown-menu .dropdown {
@@ -127,6 +131,17 @@ header nav .account a {
 
 header nav .account .login {
   border: none;
+}
+
+header nav .account .ham {
+  display: none;
+}
+
+header nav .account .ham div {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #000;
+  margin-top: 0.5rem;
 }
 
 .hero {
@@ -188,6 +203,10 @@ header nav .account .login {
   position: relative;
 }
 
+.hero .image .mobile-img {
+  display: none;
+}
+
 .hero .image img {
   width: 80%;
   right: 0;
@@ -202,5 +221,95 @@ header nav .account .login {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+@media (max-width: 475px) {
+  body {
+    height: 70vh;
+  }
+  .container {
+    max-width: 100%;
+  }
+  header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header nav {
+    margin-right: 3rem;
+  }
+  header nav .links {
+    display: none;
+  }
+  header nav .account a {
+    display: none;
+  }
+  header nav .account .ham {
+    display: block !important;
+    text-align: right;
+    margin-right: -1rem;
+    cursor: pointer;
+  }
+  header nav .account .ham div:first-child {
+    margin-top: 0;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 2rem 0rem;
+  }
+  .hero .detail {
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .hero .detail h1 {
+    font-size: 2rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .hero .detail br {
+    display: inline;
+    content: "";
+  }
+  .hero .detail p {
+    padding: 1rem 1rem;
+    text-align: center;
+    margin: 0 0rem;
+    margin-bottom: 1rem;
+  }
+  .hero .detail a {
+    position: absolute;
+    display: block;
+    white-space: nowrap;
+    width: 32%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .detail .icons {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+  .hero .detail .icons ul li {
+    margin-right: 0;
+  }
+  .hero .detail .icons ul li img {
+    width: 80%;
+  }
+  .hero .image .desktop-img {
+    display: none;
+  }
+  .hero .image .mobile-img {
+    display: block;
+  }
+  .hero .image img {
+    width: 100%;
+  }
+  .attribution {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

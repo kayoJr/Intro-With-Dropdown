@@ -31,6 +31,9 @@
 body {
     background-color: hsl(0, 0%, 98%);
 }
+.mob-nav{
+    display: none;
+}
 
 header {
     nav {
@@ -47,6 +50,7 @@ header {
             .links {
                 margin-left: 3rem;
                 position: relative;
+
                 .dropdown-menu {
                     display: none;
                     position: absolute;
@@ -55,17 +59,21 @@ header {
                     border-radius: 10px;
                     margin-top: 1rem;
                     text-align: left;
-                    transition: all .5s;
-                    .dropdown{
+                    transition: all 0.5s;
+
+                    .dropdown {
                         margin: 15px 20px;
-                        img{
+
+                        img {
                             margin-right: 15px;
                         }
                     }
-                    li{
+
+                    li {
                         padding: 0;
                     }
-                    &:hover{
+
+                    &:hover {
                         display: block;
                     }
                 }
@@ -74,18 +82,19 @@ header {
                     display: flex;
                     align-items: center;
                     padding-bottom: 0.5rem;
-                    
+
                     li {
                         margin-left: 3.5rem;
-                        a{
+
+                        a {
                             padding: 2rem 0;
+
                             &:hover {
                                 +.dropdown-menu {
                                     display: block;
                                 }
-                                }
                             }
-                        
+                        }
                     }
                 }
             }
@@ -105,6 +114,17 @@ header {
             .login {
                 border: none;
             }
+
+            .ham {
+                display: none;
+
+                div {
+                    width: 2rem;
+                    height: 0.2rem;
+                    background-color: #000;
+                    margin-top: 0.5rem;
+                }
+            }
         }
     }
 }
@@ -118,6 +138,7 @@ header {
     .detail {
         margin-right: 2rem;
         margin-top: 5rem;
+
         h1 {
             font-size: 5rem;
         }
@@ -157,6 +178,10 @@ header {
     .image {
         position: relative;
 
+        .mobile-img {
+            display: none;
+        }
+
         img {
             width: 80%;
             right: 0;
@@ -173,4 +198,112 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media (max-width: 475px) {
+    body{
+        height: 70vh;
+    }
+    .container {
+        max-width: 100%;
+    }
+
+    header {
+        margin-left: auto;
+        margin-right: auto;
+
+        nav {
+            margin-right: 3rem;
+
+            .links {
+                display: none;
+            }
+
+            .account {
+                a {
+                    display: none;
+                }
+
+                .ham {
+                    display: block !important;
+                    text-align: right;
+                    margin-right: -1rem;
+                    cursor: pointer;
+
+                    div {
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        margin: 2rem 0rem;
+
+        .detail {
+            margin: 0;
+            margin-top: 2rem;
+            h1 {
+                font-size: 2rem;
+                white-space: nowrap;
+                text-align: center;
+            }
+
+            br {
+                display: inline;
+                content: "";
+            }
+            
+            p{
+                padding: 1rem 1rem;
+                text-align: center;
+                margin: 0 0rem;
+                margin-bottom: 1rem;
+            }
+            a{
+                position: absolute;
+                display: block;
+                white-space: nowrap;
+                width: 32%;
+                text-align: center;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .icons{
+                width: 100%;
+                // margin: 6rem 0 -3rem 2rem;
+                padding: 2rem 3rem;
+                ul li{
+                    margin-right: 0;
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .image {
+            .desktop-img {
+                display: none;
+            }
+
+            .mobile-img {
+                display: block;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .attribution{
+        display: none;
+    }
+    
 }
