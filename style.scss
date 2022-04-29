@@ -203,6 +203,7 @@ header {
 @media (max-width: 475px) {
     body{
         height: 70vh;
+        position: relative;
     }
     .container {
         max-width: 100%;
@@ -265,20 +266,21 @@ header {
                 margin-bottom: 1rem;
             }
             a{
-                position: absolute;
-                display: block;
-                white-space: nowrap;
-                width: 32%;
-                text-align: center;
-                left: 0;
-                right: 0;
-                margin-left: auto;
-                margin-right: auto;
+                // position: absolute;
+                // display: block;
+                // white-space: nowrap;
+                // width: 32%;
+                // text-align: center;
+                // left: 0;
+                // right: 0;
+                // margin-left: auto;
+                // margin-right: auto;
+                margin-left: 30%;
             }
             .icons{
                 width: 100%;
                 // margin: 6rem 0 -3rem 2rem;
-                padding: 2rem 3rem;
+                padding: 2rem 3rem 0 2rem;
                 ul li{
                     margin-right: 0;
                     img{
@@ -302,8 +304,63 @@ header {
             }
         }
     }
+    .mobile-nav{
+        background-color: hsla(0, 0%, 8%, 0.849);
+        position: absolute;
+        top: -2rem;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        display: none;
+        .mob-container{
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+            height: 100vh;
+            width: 70%;
+            .top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 2rem;
+            }
+            .link{
+                margin-left: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                .main li{
+                    padding: 1rem 0 0 0;
+                }
+                .main li ul{
+                    margin-left: 1rem;
+                }
+                .main .sub-link{
+                    display: none;
+                    margin: 1rem;
+                }
+            }
+            .account{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .login{
+                    border: none;
+                }
+                .signup{
+                    padding: 15px 70px;
+                }
+            }
+        }
+    }
     .attribution{
         display: none;
     }
     
+}
+
+@media (min-width: 475px){
+    .mobile-nav{
+        display: none !important;
+    }
 }
